@@ -1,0 +1,89 @@
+/*Re-useable CSS Variables*/
+:root {
+  --primary-color: #fafafa;
+  --font-color: #3b3b3b;
+  --inner-text-color: #fafafa;
+  --border-color: #f2f2f2;
+  --primary-font: "Roboto Mono", monospace;
+  --primary-size: 16px;
+}
+
+/*Google Fonts Link*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+/*Custom CSS Code*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: var(--primary-color);
+  font-family: var(--primary-font);
+  font-size: 16px;
+  position: relative;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+.header-area {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 40px;
+}
+.header-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  flex-basis: 15%;
+  margin-right: 10px;
+}
+.logo a img {
+  width: 100%;
+}
+.navigation {
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+.navigation ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 15px;
+  color: var(--font-color);
+}
+.navigation ul li:last-child a {
+  text-transform: uppercase;
+}
+.nav-link-group {
+
+}
+.nav-link-group ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+.nav-link-group ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0 15px;
+  border: 1px solid var(--font-color);
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-size: var(--primary-size);
+  color: var(--font-color);
+}
+.nav-link-group ul li:first-child a {
+  background: var(--font-color);
+  color: var(--inner-text-color);
+}
