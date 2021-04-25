@@ -289,7 +289,7 @@ body {
   letter-spacing: 1px;
   max-height: 0;
   overflow: hidden;
-  transition: 1000ms ease max-height;
+  transition: 500ms ease max-height;
 }
 .image-content {
   flex-basis: 25%;
