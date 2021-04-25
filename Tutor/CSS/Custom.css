@@ -163,10 +163,13 @@ body {
 }
 .subject {
   flex-basis: 20%;
-  border: 1px solid var(--border-color);
   border-radius: 5px;
   padding: 12px;
-  box-shadow: 4px 4px 6px #d6d6d6, -4px -4px 6px #f2f2f2;
+  box-shadow: 2px 2px 4px #d6d6d6, -2px -2px 4px #f2f2f2;
+  transition: .5s all;
+}
+.subject:hover {
+  transform: translateY(-10px);
 }
 .subject .img-box {
   width: 180px;
@@ -188,4 +191,52 @@ body {
   text-transform: capitalize;
   color: var(--text-color);
   font-size: var(--primary-size);
+}
+
+/*features area css*/
+.features-area {
+  position: relative;
+  top: 80px;
+  padding: 80px 0;
+}
+.features-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrapper-one {
+  margin-bottom: 115px;
+}
+.features-text {
+  flex-basis: 40%;
+}
+.features-text h2 {
+  text-transform: capitalize;
+  color: var(--font-color);
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+.features-text p {
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-size: var(--primary-size);
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.features-text button {
+  text-transform: capitalize;
+  font-size: var(--primary-size);
+  color: var(--primary-color);
+  border: 1px solid var(--font-color);
+  padding: 12px 20px;
+  background: var(--font-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.features-app {
+  flex-basis: 30%;
+}
+.features-app img {
+  width: 100%;
 }
