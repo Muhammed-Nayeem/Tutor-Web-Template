@@ -4,7 +4,7 @@
   --font-color: #3b3b3b;
   --text-color: #646464;
   --inner-text-color: #fafafa;
-  --border-color: #f2f2f2;
+  --border-color: #ebebeb;
   --primary-font: "Poppins", sans-serif;
   --primary-size: 16px;
 }
@@ -91,7 +91,7 @@ body {
   color: var(--inner-text-color);
 }
 
-/*hero section css*/
+/*banner section css*/
 .banner-area {
   position: relative;
   top: 80px;
@@ -238,5 +238,62 @@ body {
   flex-basis: 30%;
 }
 .features-app img {
+  width: 100%;
+}
+
+/*question area css*/
+.question-area {
+  position: relative;
+  top: 80px;
+  padding: 60px 0;
+}
+.question-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.accordion {
+  flex-basis: 42%;
+}
+.accordion-item {
+  margin: 20px 0;
+  padding: 15px 5px;
+  border-bottom: 1px solid var(--border-color);
+}
+.accordion-item:last-child {
+  border-bottom: none;
+}
+.accordion-question {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-color);
+  margin-bottom: 12px;
+  font-size: 22px;
+  cursor: pointer;
+}
+.accordion-question::after {
+  content: "+";
+  font-size: 25px;
+  /* margin-left: auto; */
+}
+.accordion-active-question::after {
+  content: "-";
+}
+.accordion-answer {
+  color: var(--text-color);
+  font-size: var(--primary-size);
+  line-height: 22px;
+  letter-spacing: 1px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 1000ms ease max-height;
+}
+.image-content {
+  flex-basis: 25%;
+}
+.image-content img {
   width: 100%;
 }
