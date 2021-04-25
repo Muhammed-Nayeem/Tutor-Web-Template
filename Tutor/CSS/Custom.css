@@ -18,6 +18,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  transition: 600ms ease;
+}
 body {
   background: var(--primary-color);
   font-family: var(--primary-font);
@@ -166,7 +170,7 @@ body {
   border-radius: 5px;
   padding: 12px;
   box-shadow: 2px 2px 4px #d6d6d6, -2px -2px 4px #f2f2f2;
-  transition: .5s all;
+  transition: 0.5s all;
 }
 .subject:hover {
   transform: translateY(-10px);
@@ -390,4 +394,68 @@ body {
 .texts ul li i {
   color: var(--font-color);
   margin-right: 6px;
+}
+
+/*footer area css*/
+.footer-area {
+  position: relative;
+  top: 80px;
+  padding: 50px 0;
+  background: var(--font-color);
+  margin-top: 80px;
+}
+.footer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-box {
+  flex-basis: 20%;
+}
+.footer-box:first-child {
+  flex-basis: 30%;
+}
+.footer-box:first-child .imgBx {
+  width: 200px;
+}
+.footer-box:first-child .imgBx img {
+  width: 100%;
+}
+.footer-box:first-child ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-box:first-child ul li {
+  margin: 10px 20px;
+}
+.footer-box:first-child ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--text-color);
+}
+.footer-box:first-child p {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: var(--text-color);
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+.footer-box h3 {
+  text-transform: capitalize;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.footer-box ul {
+  list-style: none;
+}
+.footer-box ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--text-color);
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
 }
