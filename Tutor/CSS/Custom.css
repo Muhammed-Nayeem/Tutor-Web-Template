@@ -4,7 +4,7 @@
   --font-color: #3b3b3b;
   --text-color: #646464;
   --inner-text-color: #fafafa;
-  --border-color: #ebebeb;
+  --border-color: #e2e2e2;
   --primary-font: "Poppins", sans-serif;
   --primary-size: 16px;
 }
@@ -296,4 +296,98 @@ body {
 }
 .image-content img {
   width: 100%;
+}
+
+/*subscription area css*/
+.subscription-area {
+  position: relative;
+  top: 80px;
+  padding: 60px 0;
+}
+.subscription-title {
+  padding: 15px;
+  margin: 30px 0;
+}
+.subscription-title h3 {
+  text-align: center;
+  color: var(--font-color);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.subscription-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.subscription-box {
+  flex-basis: 28%;
+}
+.subscription-box fieldset {
+  border: 1px solid var(--border-color);
+  padding: 25px;
+  border-radius: 20px;
+}
+.subscription-box fieldset legend {
+  margin: 0 auto;
+}
+.subscription-box fieldset legend .image-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px;
+}
+.subscription-box fieldset legend .image-box img {
+  width: 100%;
+  height: 100%;
+}
+.subscription-box .texts {
+  margin: 15px auto;
+  width: 100%;
+}
+.texts h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: var(--font-color);
+  margin-bottom: 10px;
+}
+.texts p {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+.texts span {
+  font-size: 25px;
+  font-weight: bold;
+}
+.texts button {
+  display: block;
+  width: 235px;
+  margin: 0 auto;
+  padding: 12px 40px;
+  border: 1px solid var(--font-color);
+  background: var(--font-color);
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: var(--primary-size);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.texts ul {
+  list-style: none;
+  margin-top: 25px;
+  padding: 0 17px;
+}
+.texts ul li {
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: var(--text-color);
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.texts ul li i {
+  color: var(--font-color);
+  margin-right: 6px;
 }
