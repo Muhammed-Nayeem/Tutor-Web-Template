@@ -1,0 +1,172 @@
+/*Custom Responsive CSS Codes*/
+
+/*Large-Screen: 1280px*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+  .subject {
+    flex-basis: 21%;
+    padding: 15px 8px;
+  }
+  .features-text {
+    flex-basis: 42%;
+  }
+  .accordion {
+    flex-basis: 50%;
+  }
+  .subscription-box {
+    flex-basis: 33%;
+  }
+}
+
+/*Medium-Screen: 800px*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+  .navigation {
+    flex-basis: 42%;
+  }
+  .nav-link-group {
+    flex-basis: 35%;
+  }
+  .nav-link-group ul li a {
+    margin: 0 10px;
+    padding: 8px 8px;
+    font-size: 14px;
+  }
+  .header-wrapper {
+    margin: 12px 0;
+  }
+  .banner-text h1 {
+    font-size: 45px;
+  }
+  .subject {
+    flex-basis: 35%;
+    margin-bottom: 50px;
+  }
+  .features-area {
+    padding: 45px 0;
+  }
+  .features-text {
+    flex-basis: 50%;
+  }
+  .features-text h2 {
+    font-size: 30px;
+  }
+  .features-text p {
+    font-size: 15px;
+  }
+  .features-text button {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  .accordion {
+    flex-basis: 50%;
+  }
+  .accordion-question {
+    font-size: 18px;
+  }
+  .subscription-area {
+    padding: 30px 0;
+  }
+  .texts ul li {
+    font-size: 12px;
+  }
+  .texts button {
+    width: 232px;
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  .texts ul {
+    padding: 0 15px;
+  }
+  .footer-wrapper {
+    align-items: flex-start;
+  }
+  .footer-box:first-child {
+    flex-basis: 38%;
+  }
+}
+
+/*Mobile-Screen: 320px*/
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+  .header-wrapper {
+    justify-content: center;
+  }
+  .nav-link-group {
+    display: none;
+  }
+  .banner-text {
+    flex-basis: 100%;
+    order: 1;
+  }
+  .banner-text h1 {
+    font-size: 30px;
+  }
+  .search-field input[type="search"] {
+    width: 250px;
+  }
+  .banner-showcase {
+    flex-basis: 100%;
+    margin-top: 35px;
+    order: -1;
+  }
+  .subject {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+  .features-text {
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+  .features-app {
+    flex-basis: 100%;
+    order: -1;
+  }
+  .features-text h2 {
+    font-size: 30px;
+  }
+  .accordion {
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+  .image-content {
+    flex-basis: 100%;
+    order: -1;
+  }
+  .accordion-question {
+    font-size: 15px;
+  }
+  .accordion-answer {
+    font-size: 14px;
+  }
+  .subscription-area {
+    padding: 30px 0;
+  }
+  .subscription-box {
+    flex-basis: 100%;
+  }
+  .subscription-box {
+    flex-basis: 100%;
+    margin-bottom: 35px;
+  }
+  .footer-wrapper {
+    align-items: flex-start;
+  }
+  .footer-box:first-child {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/*Wide Mobile-Screen: 480px*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+}
